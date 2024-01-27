@@ -138,3 +138,18 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+/* Styles pour le lien vers le CV */
+#cv a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#cv a:hover {
+  background-color: #0056b3;
+}
+
