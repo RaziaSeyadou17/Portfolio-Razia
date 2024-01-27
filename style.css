@@ -1,1 +1,114 @@
+/* Réinitialisation de la mise en page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles du corps de la page */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles pour la section d'en-tête */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Styles pour la navigation */
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+/* Styles pour la section de présentation */
+#presentation {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#presentation h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#presentation p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Styles pour la section des compétences */
+#competences {
+  margin-top: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Styles pour la section des projets */
+#projets {
+  margin-top: 40px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles pour la section de contact */
+#contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styles pour le pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
