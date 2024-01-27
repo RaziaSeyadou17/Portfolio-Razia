@@ -1,5 +1,5 @@
 /* Réinitialisation de la mise en page */
-{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,9 +7,9 @@
 
 /* Styles du corps de la page */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
   color: #333;
 }
 
@@ -39,6 +39,11 @@ nav a {
   color: #333;
   font-weight: bold;
   margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #007bff;
 }
 
 /* Styles pour la section de présentation */
@@ -50,6 +55,7 @@ nav a {
 #presentation h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  color: #007bff;
 }
 
 #presentation p {
@@ -69,6 +75,7 @@ nav a {
 .skill h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
+  color: #007bff;
 }
 
 .skill p {
@@ -83,11 +90,31 @@ nav a {
 
 .project {
   margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .project img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.project p {
+  font-size: 1em;
+  color: #666;
 }
 
 /* Styles pour la section de contact */
@@ -111,4 +138,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
