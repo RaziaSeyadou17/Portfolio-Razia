@@ -152,6 +152,54 @@ footer {
 #cv a:hover {
   background-color: #0056b3;
 }
+/* Styles pour la section CV */
+#cv {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+#cv h2 {
+  color: #333;
+}
+
+#cv p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+#cv a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#cv a:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour la section Recommandation */
+#recommandation {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+#recommandation h2 {
+  color: #333;
+}
+
+#recommandation h3 {
+  color: #007bff;
+  margin-top: 10px;
+}
+
+#recommandation p {
+  font-size: 1.1em;
+  color: #666;
+}
+
 
 /* Styles pour l'en-tête avec la photo de profil */
 header {
