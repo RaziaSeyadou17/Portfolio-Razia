@@ -3,118 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Portfolio - Razia Seyadou</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- En-tête -->
+  <!-- Header -->
   <header>
     <div class="container">
-      <img src="imagelinkedin.jpeg" alt="Photo de profil">
+      <img src="imagelinkedin.jpeg" alt="Profile Picture" class="profile-img">
       <h1>Razia Seyadou</h1>
-      <p>Rédactrice Technique</p>
+      <p>Technical Writer</p>
     </div>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <a href="#presentation">Présentation</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
-    <a href="#contact">Contact</a>
-    <a href="#cv">Mon CV</a>
-    <a href="#recommandation">Recommandation</a>
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Section Présentation -->
-  <section id="presentation">
+  <!-- Introduction Section -->
+  <section id="introduction" class="section">
     <div class="container">
-      <h1>Bienvenue sur mon Portfolio</h1>
-      <p>En tant que rédactrice technique, je m'engage à apporter une expertise confirmée dans la conception de contenus 
-        non seulement clairs, concis, mais également résolument compréhensibles.
-      </p>
+      <h2>Welcome</h2>
+      <p>As a technical writer, I am committed to delivering content that is clear, concise, and easily understandable while integrating the best practices of information structuring and ergonomic design.</p>
     </div>
   </section>
 
-  <!-- Section Compétences -->
-  <section id="competences">
+  <!-- Skills Section -->
+  <section id="skills" class="section">
     <div class="container">
-      <h2>Mes Compétences</h2>
-     
+      <h2>My Skills</h2>
       <div class="skill">
-        <h2>Rédaction technique</h2>
-         <p> Rédaction concise et compréhensible.</p>
+        <h3>Technical Writing</h3>
+        <ul>
+          <li>Technical writing</li>
+          <li>Document formatting</li>
+          <li>Version control (Git)</li>
+          <li>Style guide creation</li>
+          <li>Content migration and reuse</li>
+          <li>Information design and structuring</li>
+          <li>Project management</li>
+        </ul>
       </div>
-
       <div class="skill">
-        <h2>Structuration de l'information</h2>
-        <p> Organisation de l'information de façon ergonomique et claire.</p>
+        <h3>Tools and Technologies</h3>
+        <ul>
+          <li><strong>CCMS Tools:</strong> Oxygen, Herreto, XML, DITA</li>
+          <li><strong>Languages:</strong> HTML, CSS, Markdown, PHP</li>
+          <li><strong>Design:</strong> Figma, Illustrator, InDesign, Inkscape</li>
+          <li><strong>Collaboration:</strong> Jira, GitHub, Bitbucket, Confluence</li>
+        </ul>
       </div>
-
-      <div class="skill">
-        <h2>Git - Github - Terminal de commande</h2>
-        <p> Gestion des versions de la documentation grâce à l'outil "Git" avec le terminal de commande sur Mac.
-        Ouverture de "pull request" sur Github dédié à la verification technique et linguistique de la documentation produite.</p>
-      </div>
-
-      <div class="skill">
-        <h2>HTML & CSS</h2>
-        <p> Réalisation d'un site web pour un projet de cours HTML/CSS </p>
-      </div>
-
-      <!-- Ajoute d'autres compétences selon tes besoins -->
-
     </div>
   </section>
 
-  <!-- Section Projets -->
-  <section id="projets">
+  <!-- Projects Section -->
+  <section id="projects" class="section">
     <div class="container">
-      <h2>Mes Projets</h2>
+      <h2>My Projects</h2>
 
-      <div class="project">
-        <a href="projects/DoggyBuddy.pdf" target="_blank">
-          <h3>Projet d'application mobile</h3>
-          <p> Projet de groupe réalisé dans le cadre du cours d'ergonomie. Prototype d'application mobile réalisé sur Figma.</p>
-        </a>
+      <div class="project-card">
+        <h3>Mobile Application - DoggyBuddy</h3>
+        <p>A group project created as part of an ergonomics course. Mobile app prototype designed using Figma.</p>
+        <a href="projects/DoggyBuddy.pdf" target="_blank">View Project</a>
       </div>
 
-      <div class="project">
-        <a href="projects/Guide_Famille.pdf" target="_blank">
-          <h3>Projet Framemaker</h3>
-          <p> Projet individuel réalisé dans le cadre du cours de Framemaker. Reproduction d'un manuel touristique à l'aide du logiciel
-          Framemaker.</p>
-        </a>
+      <div class="project-card">
+        <h3>Tourist Guide - Framemaker</h3>
+        <p>An individual project created during a Framemaker course. Reproduction of a tourist guide using Framemaker.</p>
+        <a href="projects/Guide_Famille.pdf" target="_blank">View Project</a>
       </div>
 
-      <!-- Ajoute d'autres projets selon tes besoins -->
-
+      <div class="project-card">
+        <h3>My Scality Projects and Documentation Samples</h3>
+        <p>An overview of my technical projects and documentation samples developed during my time at Scality.</p>
+        <a href="projects/Scality_Documentation_Samples.pdf" target="_blank">View Project</a>
+      </div>
+      
     </div>
   </section>
 
-  <!-- Section CV-->
-  <section id="cv">
+  <!-- Resume Section -->
+  <section id="resume" class="section">
     <div class="container">
-      <h2>Mon CV</h2>
-      <p>Téléchargez mon CV pour en savoir plus sur mon parcours professionnel.</p>
-      <a href="CV-Razia-Français.pdf" target="_blank">Télécharger le CV (PDF)</a>
+      <h2>My Resume</h2>
+      <p>Download my resume to learn more about my professional background.</p>
+      <a href="CV-Razia-English.pdf" target="_blank" class="btn">Download Resume</a>
     </div>
   </section>
-  
-  <!-- Section Recommandation -->
-  <section id="recommandation">
+
+  <!-- Recommendations Section -->
+  <section id="recommendations" class="section">
     <div class="container">
-      <h2>Recommandation</h2>
-      <h3>Lucie Alexandra Leonard (via LinkedIn)</h3>
-      <p>"J'ai eu l'occasion de travailler avec Razia à deux reprises: une première fois lors 
-        d'un stage qu'elle a effectué lors de sa licence, et la seconde dans le cadre de son année 
-        d'apprentissage en M2 CTM. Elle a activement participé aux différents projets de documentation 
-        (maintenance, rédaction, restructuration de procédures internes) et collaboré avec les différents services 
-        (développement, support). Motivée, sérieuse et désireuse d'apprendre, ça a été un plaisir d'accompagner 
-        et former Razia pour qu'elle devienne la professionnelle qu'elle est à présent."</p>
+      <h2>Recommendations</h2>
+      <blockquote>
+        <p>"I had the chance to work with Razia twice: the first time during an internship she completed during her bachelor's degree, and the second during her apprenticeship year in the Master's program. Motivated, serious, and eager to learn, it was a pleasure to mentor Razia and see her develop into the professional she is today."</p>
+        <cite>- Lucie Alexandra Leonard (via LinkedIn)</cite>
+      </blockquote>
     </div>
   </section>
 
 </body>
 </html>
+
