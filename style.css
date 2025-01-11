@@ -7,9 +7,9 @@
 
 /* Body */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.6;
-  background: #f4f4f9;
+  background: #f7f8fa; /* Light, neutral background for a cozy feel */
   color: #333;
 }
 
@@ -23,10 +23,11 @@ body {
 /* Header */
 header {
   text-align: center;
-  background: #007bff;
+  background: linear-gradient(135deg, #4a6572, #34495e); /* Muted professional gradient */
   color: #fff;
-  padding: 40px 20px;
-  border-bottom: 5px solid #0056b3;
+  padding: 50px 20px;
+  border-bottom: 5px solid #2c3e50;
+  border-radius: 0 0 20px 20px;
 }
 
 header .profile-img {
@@ -34,44 +35,47 @@ header .profile-img {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 5px solid #2c3e50; /* Frame for image */
 }
 
 header h1 {
   font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2em;
+  font-weight: 300;
 }
 
 /* Navigation */
 nav {
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
 }
 
 nav .nav-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   list-style: none;
   padding: 15px;
 }
 
-nav .nav-links li {
-  margin: 0 15px;
-}
-
 nav .nav-links a {
   text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  padding: 5px 10px;
+  color: #4a6572;
+  font-weight: 500;
+  padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 nav .nav-links a:hover {
-  background: #007bff;
+  background: #4a6572;
   color: #fff;
 }
 
@@ -82,9 +86,19 @@ nav .nav-links a:hover {
 
 .section h2 {
   font-size: 2em;
-  color: #007bff;
+  color: #4a6572;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.section:nth-child(even) {
+  background: #ffffff; /* Alternating background colors */
+  border-radius: 10px;
+}
+
+.section:nth-child(odd) {
+  background: #eef1f5;
+  border-radius: 10px;
 }
 
 /* Skills Section */
@@ -94,10 +108,11 @@ nav .nav-links a:hover {
   gap: 10px;
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 
 .skill ul li {
-  background: #007bff;
+  background: #4a6572;
   color: #fff;
   padding: 10px 15px;
   border-radius: 25px;
@@ -106,39 +121,48 @@ nav .nav-links a:hover {
 }
 
 .skill ul li:hover {
-  background: #0056b3;
+  background: #2c3e50;
 }
 
 /* Projects */
 .project-card {
   background: #fff;
-  margin-bottom: 20px;
+  margin: 20px auto;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: center;
 }
 
 .project-card h3 {
-  color: #007bff;
+  font-size: 1.5em;
+  color: #4a6572;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0 20px;
 }
 
 .project-card a {
   text-decoration: none;
   color: #fff;
-  background: #007bff;
+  background: #4a6572;
   padding: 10px 15px;
   border-radius: 5px;
   display: inline-block;
-  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .project-card a:hover {
-  background: #0056b3;
+  background: #2c3e50;
 }
 
 /* Button */
 .btn {
-  background: #007bff;
+  background: #4a6572;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -148,15 +172,19 @@ nav .nav-links a:hover {
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: #2c3e50;
 }
 
-/* Recommandation */
+/* Recommendations */
 blockquote {
   font-style: italic;
-  background: #f9f9f9;
+  background: #f7f8fa;
   padding: 20px;
-  border-left: 5px solid #007bff;
+  border-left: 5px solid #4a6572;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  text-align: justify;
 }
 
 blockquote cite {
@@ -166,3 +194,13 @@ blockquote cite {
   text-align: right;
   color: #555;
 }
+
+/* Footer */
+footer {
+  background: #4a6572;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
