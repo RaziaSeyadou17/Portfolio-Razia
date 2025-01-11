@@ -1,227 +1,168 @@
-/* Réinitialisation de la mise en page */
+/* Reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Styles du corps de la page */
+/* Body */
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f8f8f8;
+  background: #f4f4f9;
   color: #333;
 }
 
-/* Conteneur principal */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Styles pour la section d'en-tête */
+/* Header */
 header {
-  background-color: #007bff;
+  text-align: center;
+  background: #007bff;
   color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-/* Styles pour la navigation */
-nav {
-  margin-top: 20px;
-  text-align: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  margin: 0 15px;
-  transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-  color: #007bff;
-}
-
-/* Styles pour la section de présentation */
-#presentation {
-  text-align: center;
-  padding: 40px 0;
-}
-
-#presentation h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  color: #007bff;
-}
-
-#presentation p {
-  font-size: 1.2em;
-  color: #666;
-}
-
-/* Styles pour la section des compétences */
-#competences {
-  margin-top: 40px;
-}
-
-.skill {
-  margin-bottom: 20px;
-}
-
-.skill h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #007bff;
-}
-
-.skill p {
-  font-size: 1.1em;
-  color: #666;
-}
-
-/* Styles pour la section des projets */
-#projets {
-  margin-top: 40px;
-}
-
-.project {
-  margin-bottom: 40px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.project:hover {
-  transform: scale(1.05);
-}
-
-.project img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
-}
-
-.project h3 {
-  font-size: 1.5em;
-  margin: 10px 0;
-  color: #007bff;
-}
-
-.project p {
-  font-size: 1em;
-  color: #666;
-}
-
-/* Styles pour la section de contact */
-#contact {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Styles pour le pied de page */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Styles pour le lien vers le CV */
-#cv a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-#cv a:hover {
-  background-color: #0056b3;
-}
-/* Styles pour la section CV */
-#cv {
-  background-color: #f8f8f8;
   padding: 40px 20px;
+  border-bottom: 5px solid #0056b3;
 }
 
-#cv h2 {
-  color: #333;
-}
-
-#cv p {
-  font-size: 1.1em;
-  color: #666;
-}
-
-#cv a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-#cv a:hover {
-  background-color: #0056b3;
-}
-
-/* Styles pour la section Recommandation */
-#recommandation {
-  background-color: #f8f8f8;
-  padding: 40px 20px;
-}
-
-#recommandation h2 {
-  color: #333;
-}
-
-#recommandation h3 {
-  color: #007bff;
-  margin-top: 10px;
-}
-
-#recommandation p {
-  font-size: 1.1em;
-  color: #666;
-}
-
-
-/* Styles pour l'en-tête avec la photo de profil */
-header {
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  padding: 40px 0;
-}
-
-header img {
-  max-width: 100%; /* La largeur maximale de l'image est de 100% du conteneur */
-  height: auto;
-  border-radius: 50%; /* Rend l'image circulaire */
+header .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 
 header h1 {
   font-size: 2.5em;
-  margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2em;
 }
 
+/* Navigation */
+nav {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px;
+}
+
+nav .nav-links li {
+  margin: 0 15px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  padding: 40px 20px;
+}
+
+.section h2 {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Skills Section */
+.skill ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skill ul li {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.skill ul li:hover {
+  background: #0056b3;
+}
+
+/* Projects */
+.project-card {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #007bff;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #fff;
+  background: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-card a:hover {
+  background: #0056b3;
+}
+
+/* Button */
+.btn {
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Recommandation */
+blockquote {
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+  color: #555;
+}
